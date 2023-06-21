@@ -1,0 +1,21 @@
+{
+	"target": "linux/amd64",
+	"http": "127.0.0.1:[port]",
+	"workdir": "/data/fuzz_workdir/workdir_[id]",
+	"kernel_obj": "/data/kernels/[id]/linux_buggy_patched_for_fuzz/",
+	"image": "/image/wheezy.img",
+	"sshkey":"/image/wheezy.img.key", 
+	"syzkaller": "/klaus_fuzzer",
+	"disable_syscalls": ["keyctl", "add_key", "request_key"],
+	"suppressions": ["some known bug"],
+	"procs": 2,
+	"type": "qemu",
+	"vm": {
+		"count": 2,
+		"cpu": 2,
+		"mem": 2048,
+		"kernel": "/data/kernels/[id]/linux_buggy_patched_for_fuzz/arch/x86/boot/bzImage"
+		
+	}
+}
+

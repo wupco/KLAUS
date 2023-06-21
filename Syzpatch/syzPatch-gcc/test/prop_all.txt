@@ -1,0 +1,6 @@
+all.c 31 main
+test_struct 0
+------
+test_struct 0
+test_struct 16
+------

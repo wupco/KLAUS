@@ -1,0 +1,153 @@
+goal: find new use of variables and modification of objects
+
+// from basic block level to the whole program level
+
+1. preprocess
+the change has direct effect on some basic block, the change of basic block
+may lead to change of control flow graph. Finding common post-dominator makes
+sure we cover all the basic blocks. the range from the change of basic block
+to its post-dominator is the range of change.
+
+1.1 find changed basic block
+with the hlep of llvm-diff
+
+1.2 find common post-dominator, why
+
+
+2. value-set analysis with abstract semantics
+
+this is a intra-procedure analysis, it doesn't find variable affected outside
+the changed function.
+
+for each variables in the changed basic block, find their all possible values
+with an abstract condition.
+
+2.1 the variables we care about:
+- explicitly defined as variables
+- content of objects
+
+2.2 forward analysis, smallest solution, fixed point
+
+2.2.1 extract abstract condition
+analyze the CFG, if the edge between two basic blocks in the range is connected
+by a conditional node, we extract the condition in the conditional node.
+and abstract condition with the objects.
+
+2.2.2 forward analysis with abstract condition
+the analysis runs in the basic level, starts from the entry of the range of change,
+which doesn't have any condition. for basic blocks connected with a conditional edge,
+the variables being defined comes with a condition, meaning that under which condition,
+the variable could be defined.
+
+each value of variable are represented as following
+
+{addr : {pair<cond1, val1>, pair<cond2, val2> ...}}
+
+each basic block generates two sets: gen set and kill set.
+the gen set contains variables and its value along with its condition, the kill
+set contains variable and the condition, if there is a match of variable and 
+condition at entry of the basic block, the corresponding variables will be killed. 
+
+the entry of basic block is the convergence of exit of its presuccessors. the 
+analysis keeps until we find a fixed point of the sets of variables.
+
+finally, we get a set of variable at the entry of the commom post-dominator
+
+
+3. compare at post-dominator
+with the same abstract condition, the difference of def list and use list of variables.
+
+3.1 new use
+A: <empty>
+B: <addr : {<cond>, }>
+
+a new reference to an addr in B than A
+
+A: <addr : {<cond1, cond2>, }>
+B: <addr : {<cond1>, }
+same addr, but B has a new use when !cond2
+
+
+3.2 new define
+A: <empty>
+B: <addr : {<cond>, val}>
+
+a new define to an addr in B than A
+
+A: <addr : {<cond1, cond2>, val}>
+B: <addr : {<cond1,>, val}>
+same addr, same val, but B has a new define compared to A when !cond2
+
+A: <addr : {<cond1>, val1}>
+B: <addr : {<cond1>, val2}>
+same addr, same cond, but val1 is different than val2
+
+A: <addr : {<cond2>, val2}>
+B: <addr : {<cond1>, val1}>
+
+
+
+3.3 dead define
+A: <addr, {<cond>, val}>
+B: <empty>
+
+
+A: <addr1 : {<cond1,>, val1}>
+B: <addr1 : {<cond1, cond2>, val1}>
+same addr, same val, more cond --> A has a dead define if cond1 && !cond2
+
+
+4. refinement
+this is the propagation that we talked about before.
+the refinement solves inter-procedure issue of variables changed.
+
+If the variable is not initialized with a proper value, the bug shows at locations where
+the variable is used. The variables could be propagated somewhere else, which is outside
+the function, as such, the refinement performs inter-procedure analysis, which allows us
+to find it's use site beyong this function.
+
+the analysis is bound by object
+
+4.1 forward propagation
+
+for variables being defined newly.
+
+4.2 backward propagation
+
+conditions
+for values used to define variables
+
+
+arg input -> var
+fuzz satisfies cond
+
+
+// example
+
+if (x > 3) {
+    x = x - 1
+} else {
+    x = x + 1
+}
+
+x = a
+while (x<100) {
+    x = x + 1
+}
+y = x
+
+
+6. instructmentation
+
+3 kinds of instructmentation:
+1) objects
+2) refinement nodes, including the point where new define et al happens
+3) condition nodes, annotate the variables inside.
+
+an algo for multi-target
+
+0xdeadbeef_addr
+
+for each var, it has unique 3 bytes id, 1 byte for type, 4 bytes for addr
+
+var_id + type + addr

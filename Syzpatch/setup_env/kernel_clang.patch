@@ -1,0 +1,13 @@
+diff --git a/scripts/min-tool-version.sh b/scripts/min-tool-version.sh
+index 7c20252a9..107f830d6 100755
+--- a/scripts/min-tool-version.sh
++++ b/scripts/min-tool-version.sh
+@@ -28,7 +28,7 @@ llvm)
+ 	if [ "$SRCARCH" = s390 ]; then
+ 		echo 13.0.0
+ 	else
+-		echo 11.0.0
++		echo 10.0.0
+ 	fi
+ 	;;
+ *)

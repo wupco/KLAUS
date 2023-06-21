@@ -1,0 +1,13 @@
+--- linux_bug/arch/x86/include/asm/asm.h	2023-06-21 02:25:13.071232780 +0000
++++ linux_buggy_patched/arch/x86/include/asm/asm.h	2023-06-21 02:06:21.351995678 +0000
+@@ -1,9 +1,7 @@
+-#ifndef asm_volatile_goto
+-#define asm_volatile_goto(x...) asm goto(x)
+-#endif
+ /* SPDX-License-Identifier: GPL-2.0 */
+ #ifndef _ASM_X86_ASM_H
+ #define _ASM_X86_ASM_H
++
+ #ifdef __ASSEMBLY__
+ # define __ASM_FORM(x)	x
+ # define __ASM_FORM_RAW(x)     x

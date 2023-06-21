@@ -1,0 +1,2774 @@
+init the pair test_struct 0 main
+adding object test_struct:0
+init the pair test_struct 12 main
+adding object test_struct:12
+loading prop file
+adding new set all.c 29 main
+loading pre test_struct 0
+loading post test_struct 0
+loading post test_struct 12
+done with load prop
+
+init the pair test_struct 0 main
+init the pair test_struct 12 main
+loading prop file
+adding new set all.c 29 main
+loading pre test_struct 0
+loading post test_struct 0
+loading post test_struct 12
+done with load prop
+
+init the pair test_struct 0 main
+init the pair test_struct 12 main
+loading prop file
+adding new set all.c 29 main
+loading pre test_struct 0
+loading post test_struct 0
+loading post test_struct 12
+done with load prop
+
+b.c: In function ‘main’:
+b.c:14:26: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   14 |  struct test_struct *t = malloc(100);
+      |                          ^~~~~~
+b.c:14:26: warning: incompatible implicit declaration of built-in function ‘malloc’
+b.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+  +++ |+#include <stdlib.h>
+    1 | struct test_struct {
+b.c:16:2: warning: implicit declaration of function ‘read’ [-Wimplicit-function-declaration]
+   16 |  read(0, t, 100);
+      |  ^~~~
+b.c:18:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   18 |  printf("t a : %d\n", tt.aaaa);
+      |  ^~~~~~
+b.c:18:2: warning: incompatible implicit declaration of built-in function ‘printf’
+b.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | struct test_struct {
+stmt 0
+return;
+file b.c:9
+stmt debug done
+stmt 1
+return;
+file b.c:10
+stmt debug done
+stmt 2
+return;
+file b.c:11
+stmt debug done
+stmt 3
+return;
+file b.c:12
+stmt debug done
+stmt 4
+t_7 = malloc (100);
+file b.c:14
+stmt debug done
+
+
+id : 0  <addr_expr 0x7fc237254480
+    type <pointer_type 0x7fc23724f540
+        type <function_type 0x7fc237192000 type <pointer_type 0x7fc2370ed000>
+            QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f6348
+            attributes <tree_list 0x7fc23719f460
+                purpose <identifier_node 0x7fc2370f1820 alloc_size>
+                value <tree_list 0x7fc23710e988
+                    value <integer_cst 0x7fc2370eb060 constant 1>>>
+            arg-types <tree_list 0x7fc2370e1b40 value <integer_type 0x7fc2370e57e0 long unsigned int>
+                chain <tree_list 0x7fc2370e17d0 value <void_type 0x7fc2370e5f18 void>>>
+            pointer_to_this <pointer_type 0x7fc23724f540>>
+        unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f5e8>
+    constant
+    arg:0 <function_decl 0x7fc23719ef00 malloc type <function_type 0x7fc237192000>
+        addressable used nothrow public external built-in decl_2 decl_5 decl_6 QI <built-in>:0:0
+        align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_MALLOC
+        attributes <tree_list 0x7fc23719f578
+            purpose <identifier_node 0x7fc2370f1a50 nothrow>
+            chain <tree_list 0x7fc23719f550
+                purpose <identifier_node 0x7fc2370f1aa0 leaf>
+                chain <tree_list 0x7fc23719f528
+                    purpose <identifier_node 0x7fc2370f1960 malloc>>>>
+        chain <function_decl 0x7fc2371a2000 __builtin_next_arg type <function_type 0x7fc23710bbd0>
+            public external built-in QI <built-in>:0:0
+            align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_NEXT_ARG context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            attributes <tree_list 0x7fc23719f5a0 purpose <identifier_node 0x7fc2370f1aa0 leaf>> chain <function_decl 0x7fc2371a2100 __builtin_parity>>>>
+
+
+id : 1  <pointer_type 0x7fc23724f540
+    type <function_type 0x7fc237192000
+        type <pointer_type 0x7fc2370ed000 type <void_type 0x7fc2370e5f18 void>
+            public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370ed000
+            pointer_to_this <pointer_type 0x7fc2370f5540>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f6348
+        attributes <tree_list 0x7fc23719f460
+            purpose <identifier_node 0x7fc2370f1820 alloc_size>
+            value <tree_list 0x7fc23710e988
+                value <integer_cst 0x7fc2370eb060 constant 1>>>
+        arg-types <tree_list 0x7fc2370e1b40 value <integer_type 0x7fc2370e57e0 long unsigned int>
+            chain <tree_list 0x7fc2370e17d0 value <void_type 0x7fc2370e5f18 void>>>
+        pointer_to_this <pointer_type 0x7fc23724f540>>
+    unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f5e8>
+
+
+id : 2  <function_type 0x7fc237192000
+    type <pointer_type 0x7fc2370ed000
+        type <void_type 0x7fc2370e5f18 void VOID
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5f18
+            pointer_to_this <pointer_type 0x7fc2370ed000>>
+        public unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370ed000
+        pointer_to_this <pointer_type 0x7fc2370f5540>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f6348
+    attributes <tree_list 0x7fc23719f460
+        purpose <identifier_node 0x7fc2370f1820 alloc_size>
+        value <tree_list 0x7fc23710e988
+            value <integer_cst 0x7fc2370eb060 constant 1>>>
+    arg-types <tree_list 0x7fc2370e1b40
+        value <integer_type 0x7fc2370e57e0 long unsigned int public unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e57e0 precision:64 min <integer_cst 0x7fc2370ccf78 0> max <integer_cst 0x7fc2370cd520 18446744073709551615>
+            pointer_to_this <pointer_type 0x7fc2370f5348>>
+        chain <tree_list 0x7fc2370e17d0 value <void_type 0x7fc2370e5f18 void>>>
+    pointer_to_this <pointer_type 0x7fc23724f540>>
+
+
+id : 3  <pointer_type 0x7fc2370ed000
+    type <void_type 0x7fc2370e5f18 void VOID
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5f18
+        pointer_to_this <pointer_type 0x7fc2370ed000>>
+    public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370ed000
+    pointer_to_this <pointer_type 0x7fc2370f5540>>
+
+
+id : 4  <void_type 0x7fc2370e5f18 void VOID
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5f18
+    pointer_to_this <pointer_type 0x7fc2370ed000>>
+
+
+id : 5  <function_decl 0x7fc23719ef00 malloc
+    type <function_type 0x7fc237192000
+        type <pointer_type 0x7fc2370ed000 type <void_type 0x7fc2370e5f18 void>
+            public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370ed000
+            pointer_to_this <pointer_type 0x7fc2370f5540>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f6348
+        attributes <tree_list 0x7fc23719f460
+            purpose <identifier_node 0x7fc2370f1820 alloc_size>
+            value <tree_list 0x7fc23710e988
+                value <integer_cst 0x7fc2370eb060 constant 1>>>
+        arg-types <tree_list 0x7fc2370e1b40 value <integer_type 0x7fc2370e57e0 long unsigned int>
+            chain <tree_list 0x7fc2370e17d0 value <void_type 0x7fc2370e5f18 void>>>
+        pointer_to_this <pointer_type 0x7fc23724f540>>
+    addressable used nothrow public external built-in decl_2 decl_5 decl_6 QI <built-in>:0:0
+    align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_MALLOC
+    attributes <tree_list 0x7fc23719f578
+        purpose <identifier_node 0x7fc2370f1a50 nothrow>
+        chain <tree_list 0x7fc23719f550
+            purpose <identifier_node 0x7fc2370f1aa0 leaf>
+            chain <tree_list 0x7fc23719f528
+                purpose <identifier_node 0x7fc2370f1960 malloc>>>> chain <function_decl 0x7fc2371a2000 __builtin_next_arg>>
+
+
+id : 6  <function_type 0x7fc237192000
+    type <pointer_type 0x7fc2370ed000
+        type <void_type 0x7fc2370e5f18 void VOID
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5f18
+            pointer_to_this <pointer_type 0x7fc2370ed000>>
+        public unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370ed000
+        pointer_to_this <pointer_type 0x7fc2370f5540>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f6348
+    attributes <tree_list 0x7fc23719f460
+        purpose <identifier_node 0x7fc2370f1820 alloc_size>
+        value <tree_list 0x7fc23710e988
+            value <integer_cst 0x7fc2370eb060 constant 1>>>
+    arg-types <tree_list 0x7fc2370e1b40
+        value <integer_type 0x7fc2370e57e0 long unsigned int public unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e57e0 precision:64 min <integer_cst 0x7fc2370ccf78 0> max <integer_cst 0x7fc2370cd520 18446744073709551615>
+            pointer_to_this <pointer_type 0x7fc2370f5348>>
+        chain <tree_list 0x7fc2370e17d0 value <void_type 0x7fc2370e5f18 void>>>
+    pointer_to_this <pointer_type 0x7fc23724f540>>
+
+
+id : 7  <pointer_type 0x7fc2370ed000
+    type <void_type 0x7fc2370e5f18 void VOID
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5f18
+        pointer_to_this <pointer_type 0x7fc2370ed000>>
+    public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370ed000
+    pointer_to_this <pointer_type 0x7fc2370f5540>>
+
+
+id : 8  <void_type 0x7fc2370e5f18 void VOID
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5f18
+    pointer_to_this <pointer_type 0x7fc2370ed000>>
+
+
+id : 9  <integer_cst 0x7fc237235438 type <integer_type 0x7fc2370e57e0 long unsigned int> constant 100>
+
+
+id : 10  <integer_type 0x7fc2370e57e0 long unsigned int public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e57e0 precision:64 min <integer_cst 0x7fc2370ccf78 0> max <integer_cst 0x7fc2370cd520 18446744073709551615>
+    pointer_to_this <pointer_type 0x7fc2370f5348>>
+
+
+id : 11  <ssa_name 0x7fc23725e090
+    type <pointer_type 0x7fc23724f3f0
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+        sizes-gimplified public unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+    var <var_decl 0x7fc237961ab0 t>
+    def_stmt t_7 = malloc (100);
+    version:7>
+
+
+id : 12  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 13  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+stmt 5
+read (0, t_7, 100);
+file b.c:16
+stmt debug done
+
+
+id : 14  <addr_expr 0x7fc2372544a0
+    type <pointer_type 0x7fc23724f690
+        type <function_type 0x7fc2370f29d8 type <integer_type 0x7fc2370e55e8 int>
+            QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+            pointer_to_this <pointer_type 0x7fc23724f690>>
+        unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f690>
+    constant
+    arg:0 <function_decl 0x7fc237253100 read type <function_type 0x7fc2370f29d8>
+        addressable used public external decl_2 decl_5 QI b.c:16:2 align:8 warn_if_not_align:0>>
+
+
+id : 15  <pointer_type 0x7fc23724f690
+    type <function_type 0x7fc2370f29d8
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+        pointer_to_this <pointer_type 0x7fc23724f690>>
+    unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f690>
+
+
+id : 16  <function_type 0x7fc2370f29d8
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+    pointer_to_this <pointer_type 0x7fc23724f690>>
+
+
+id : 17  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 18  <function_decl 0x7fc237253100 read
+    type <function_type 0x7fc2370f29d8
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+        pointer_to_this <pointer_type 0x7fc23724f690>>
+    addressable used public external decl_2 decl_5 QI b.c:16:2 align:8 warn_if_not_align:0>
+
+
+id : 19  <function_type 0x7fc2370f29d8
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+    pointer_to_this <pointer_type 0x7fc23724f690>>
+
+
+id : 20  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 21  <integer_cst 0x7fc2370eb048 type <integer_type 0x7fc2370e55e8 int> constant 0>
+
+
+id : 22  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 23  <ssa_name 0x7fc23725e090
+    type <pointer_type 0x7fc23724f3f0
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+        sizes-gimplified public unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+    var <var_decl 0x7fc237961ab0 t>
+    def_stmt t_7 = malloc (100);
+    version:7>
+
+
+id : 24  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 25  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 26  <integer_cst 0x7fc237235420 type <integer_type 0x7fc2370e55e8 int> constant 100>
+
+
+id : 27  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+stmt 6
+tt.aaaa = 10;
+file b.c:17
+stmt debug done
+
+
+id : 28  <integer_cst 0x7fc2372354b0 type <integer_type 0x7fc2370e55e8 int> constant 10>
+
+
+id : 29  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 30  <component_ref 0x7fc237252210
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    arg:0 <var_decl 0x7fc237961b40 tt
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+        used read BLK b.c:15:21 size <integer_cst 0x7fc2370eb168 192> unit-size <integer_cst 0x7fc2370eb138 24>
+        align:64 warn_if_not_align:0 context <function_decl 0x7fc237229f00 main>
+        chain <function_decl 0x7fc237253300 read type <function_type 0x7fc2370f29d8>
+            addressable used public external decl_2 decl_5 QI b.c:16:2 align:8 warn_if_not_align:0 context <function_decl 0x7fc237229f00 main> chain <function_decl 0x7fc237253200 printf>>>
+    arg:1 <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>>
+    b.c:17:4 start: b.c:17:2 finish: b.c:17:8>
+got typename: test_struct
+offset 1 0 offset 2 0
+found cond pair: test_struct:0
+this is integer at b.c 17
+building feedback for cond inst
+stmt 7
+_1 = tt.aaaa;
+file b.c:18
+stmt debug done
+
+
+id : 31  <component_ref 0x7fc237252600
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    arg:0 <var_decl 0x7fc237961b40 tt
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+        used read BLK b.c:15:21 size <integer_cst 0x7fc2370eb168 192> unit-size <integer_cst 0x7fc2370eb138 24>
+        align:64 warn_if_not_align:0 context <function_decl 0x7fc237229f00 main>
+        chain <function_decl 0x7fc237253300 read type <function_type 0x7fc2370f29d8>
+            addressable used public external decl_2 decl_5 QI b.c:16:2 align:8 warn_if_not_align:0 context <function_decl 0x7fc237229f00 main> chain <function_decl 0x7fc237253200 printf>>>
+    arg:1 <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>>
+    b.c:18:2 start: b.c:18:2 finish: b.c:18:30>
+got typename: test_struct
+offset 1 0 offset 2 0
+found cond pair: test_struct:0
+this is integer at b.c 18
+stmt 8
+printf ("t a : %d\n", _1);
+file b.c:18
+stmt debug done
+
+
+id : 32  <addr_expr 0x7fc2372544c0
+    type <pointer_type 0x7fc23724f9d8
+        type <function_type 0x7fc23717b2a0 type <integer_type 0x7fc2370e55e8 int>
+            QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+            attributes <tree_list 0x7fc23717caa0
+                purpose <identifier_node 0x7fc2370f19b0 nonnull>
+                value <tree_list 0x7fc23710e988
+                    value <integer_cst 0x7fc2370eb060 constant 1>>
+                chain <tree_list 0x7fc23717ca78
+                    purpose <identifier_node 0x7fc2370f18c0 format>
+                    value <tree_list 0x7fc237111708
+                        value <identifier_node 0x7fc2370f1b40 printf>
+                        chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1> chain <tree_list 0x7fc23710e9b0>>>>>
+            arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+            pointer_to_this <pointer_type 0x7fc23724f9d8>>
+        unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fa80>
+    constant
+    arg:0 <function_decl 0x7fc237180a00 printf type <function_type 0x7fc23717b2a0>
+        addressable used public external built-in decl_2 decl_5 decl_6 QI <built-in>:0:0
+        align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF
+        chain <function_decl 0x7fc237180b00 __builtin_printf_unlocked type <function_type 0x7fc23717b2a0>
+            public external built-in decl_6 QI <built-in>:0:0
+            align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF_UNLOCKED context <translation_unit_decl 0x7fc2370d9e10 b.c> chain <function_decl 0x7fc237180c00 printf_unlocked>>>>
+
+
+id : 33  <pointer_type 0x7fc23724f9d8
+    type <function_type 0x7fc23717b2a0
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+        attributes <tree_list 0x7fc23717caa0
+            purpose <identifier_node 0x7fc2370f19b0 nonnull>
+            value <tree_list 0x7fc23710e988
+                value <integer_cst 0x7fc2370eb060 constant 1>>
+            chain <tree_list 0x7fc23717ca78
+                purpose <identifier_node 0x7fc2370f18c0 format>
+                value <tree_list 0x7fc237111708
+                    value <identifier_node 0x7fc2370f1b40 printf>
+                    chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                        chain <tree_list 0x7fc23710e9b0 value <integer_cst 0x7fc2370eb390 2>>>>>>
+        arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+        pointer_to_this <pointer_type 0x7fc23724f9d8>>
+    unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fa80>
+
+
+id : 34  <function_type 0x7fc23717b2a0
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+    attributes <tree_list 0x7fc23717caa0
+        purpose <identifier_node 0x7fc2370f19b0 nonnull>
+        value <tree_list 0x7fc23710e988
+            value <integer_cst 0x7fc2370eb060 constant 1>>
+        chain <tree_list 0x7fc23717ca78
+            purpose <identifier_node 0x7fc2370f18c0 format>
+            value <tree_list 0x7fc237111708
+                value <identifier_node 0x7fc2370f1b40 printf>
+                chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                    chain <tree_list 0x7fc23710e9b0
+                        value <integer_cst 0x7fc2370eb390 constant 2>>>>>>
+    arg-types <tree_list 0x7fc23710cb68
+        value <pointer_type 0x7fc2370f2690 type <integer_type 0x7fc2370f25e8 char>
+            unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f2690>>
+    pointer_to_this <pointer_type 0x7fc23724f9d8>>
+
+
+id : 35  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 36  <function_decl 0x7fc237180a00 printf
+    type <function_type 0x7fc23717b2a0
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+        attributes <tree_list 0x7fc23717caa0
+            purpose <identifier_node 0x7fc2370f19b0 nonnull>
+            value <tree_list 0x7fc23710e988
+                value <integer_cst 0x7fc2370eb060 constant 1>>
+            chain <tree_list 0x7fc23717ca78
+                purpose <identifier_node 0x7fc2370f18c0 format>
+                value <tree_list 0x7fc237111708
+                    value <identifier_node 0x7fc2370f1b40 printf>
+                    chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                        chain <tree_list 0x7fc23710e9b0 value <integer_cst 0x7fc2370eb390 2>>>>>>
+        arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+        pointer_to_this <pointer_type 0x7fc23724f9d8>>
+    addressable used public external built-in decl_2 decl_5 decl_6 QI <built-in>:0:0
+    align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF chain <function_decl 0x7fc237180b00 __builtin_printf_unlocked>>
+
+
+id : 37  <function_type 0x7fc23717b2a0
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+    attributes <tree_list 0x7fc23717caa0
+        purpose <identifier_node 0x7fc2370f19b0 nonnull>
+        value <tree_list 0x7fc23710e988
+            value <integer_cst 0x7fc2370eb060 constant 1>>
+        chain <tree_list 0x7fc23717ca78
+            purpose <identifier_node 0x7fc2370f18c0 format>
+            value <tree_list 0x7fc237111708
+                value <identifier_node 0x7fc2370f1b40 printf>
+                chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                    chain <tree_list 0x7fc23710e9b0
+                        value <integer_cst 0x7fc2370eb390 constant 2>>>>>>
+    arg-types <tree_list 0x7fc23710cb68
+        value <pointer_type 0x7fc2370f2690 type <integer_type 0x7fc2370f25e8 char>
+            unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f2690>>
+    pointer_to_this <pointer_type 0x7fc23724f9d8>>
+
+
+id : 38  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 39  <addr_expr 0x7fc2372540e0
+    type <pointer_type 0x7fc23724f930
+        type <array_type 0x7fc23724f888 type <integer_type 0x7fc2370e53f0 char>
+            BLK
+            size <integer_cst 0x7fc237235528 constant 80>
+            unit-size <integer_cst 0x7fc2372354f8 constant 10>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888 domain <integer_type 0x7fc23724f7e0>
+            pointer_to_this <pointer_type 0x7fc23724f930>>
+        unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f930>
+    readonly constant
+    arg:0 <string_cst 0x7fc2372540c0 type <array_type 0x7fc23724f888>
+        readonly constant static "t a : %d\012\000">
+    b.c:18:9 start: b.c:18:9 finish: b.c:18:20>
+
+
+id : 40  <pointer_type 0x7fc23724f930
+    type <array_type 0x7fc23724f888
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        BLK
+        size <integer_cst 0x7fc237235528 constant 80>
+        unit-size <integer_cst 0x7fc2372354f8 constant 10>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888
+        domain <integer_type 0x7fc23724f7e0 type <integer_type 0x7fc2370e5000 sizetype>
+            DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f7e0 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372354e0 9>>
+        pointer_to_this <pointer_type 0x7fc23724f930>>
+    unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f930>
+
+
+id : 41  <array_type 0x7fc23724f888
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    BLK
+    size <integer_cst 0x7fc237235528 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 80>
+    unit-size <integer_cst 0x7fc2372354f8 type <integer_type 0x7fc2370e5000 sizetype> constant 10>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888
+    domain <integer_type 0x7fc23724f7e0
+        type <integer_type 0x7fc2370e5000 sizetype public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5000 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2370cd4c0 18446744073709551615>>
+        DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f7e0 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372354e0 9>>
+    pointer_to_this <pointer_type 0x7fc23724f930>>
+
+
+id : 42  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 43  <string_cst 0x7fc2372540c0
+    type <array_type 0x7fc23724f888
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        BLK
+        size <integer_cst 0x7fc237235528 constant 80>
+        unit-size <integer_cst 0x7fc2372354f8 constant 10>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888
+        domain <integer_type 0x7fc23724f7e0 type <integer_type 0x7fc2370e5000 sizetype>
+            DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f7e0 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372354e0 9>>
+        pointer_to_this <pointer_type 0x7fc23724f930>>
+    readonly constant static "t a : %d\012\000">
+
+
+id : 44  <array_type 0x7fc23724f888
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    BLK
+    size <integer_cst 0x7fc237235528 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 80>
+    unit-size <integer_cst 0x7fc2372354f8 type <integer_type 0x7fc2370e5000 sizetype> constant 10>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888
+    domain <integer_type 0x7fc23724f7e0
+        type <integer_type 0x7fc2370e5000 sizetype public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5000 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2370cd4c0 18446744073709551615>>
+        DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f7e0 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372354e0 9>>
+    pointer_to_this <pointer_type 0x7fc23724f930>>
+
+
+id : 45  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 46  <ssa_name 0x7fc2370d6d80
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    def_stmt _1 = tt.aaaa;
+    version:1>
+
+
+id : 47  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+stmt 9
+_2 = t_7->c;
+file b.c:19
+stmt debug done
+
+
+id : 48  <component_ref 0x7fc237252630
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    arg:0 <mem_ref 0x7fc237257168
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+       
+        arg:0 <ssa_name 0x7fc23725e090 type <pointer_type 0x7fc23724f3f0>
+            var <var_decl 0x7fc237961ab0 t>
+            def_stmt t_7 = malloc (100);
+            version:7>
+        arg:1 <integer_cst 0x7fc237235678 constant 0>
+        b.c:19:24 start: b.c:19:24 finish: b.c:19:25>
+    arg:1 <field_decl 0x7fc2370f4428 c type <integer_type 0x7fc2370e55e8 int>
+        SI b.c:4:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370ccd08 constant 16>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>>
+    b.c:19:2 start: b.c:19:2 finish: b.c:19:27>
+got typename: test_struct
+offset 1 16 offset 2 0
+
+
+id : 49  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 50  <mem_ref 0x7fc237257168
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+   
+    arg:0 <ssa_name 0x7fc23725e090
+        type <pointer_type 0x7fc23724f3f0 type <record_type 0x7fc237223d20 test_struct>
+            sizes-gimplified public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+        var <var_decl 0x7fc237961ab0 t>
+        def_stmt t_7 = malloc (100);
+        version:7>
+    arg:1 <integer_cst 0x7fc237235678 type <pointer_type 0x7fc23724f3f0> constant 0>
+    b.c:19:24 start: b.c:19:24 finish: b.c:19:25>
+
+
+id : 51  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 52  <ssa_name 0x7fc23725e090
+    type <pointer_type 0x7fc23724f3f0
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+        sizes-gimplified public unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+    var <var_decl 0x7fc237961ab0 t>
+    def_stmt t_7 = malloc (100);
+    version:7>
+
+
+id : 53  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 54  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 55  <integer_cst 0x7fc237235678 type <pointer_type 0x7fc23724f3f0> constant 0>
+
+
+id : 56  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 57  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 58  <field_decl 0x7fc2370f4428 c
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    SI b.c:4:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+    align:32 warn_if_not_align:0 offset_align 128
+    offset <integer_cst 0x7fc2370ccd08 type <integer_type 0x7fc2370e5000 sizetype> constant 16>
+    bit-offset <integer_cst 0x7fc2370ccd20 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 0> context <record_type 0x7fc237223d20 test_struct>>
+
+
+id : 59  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 60  <ssa_name 0x7fc2370d6dc8
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    def_stmt _2 = t_7->c;
+    version:2>
+
+
+id : 61  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+stmt 10
+printf ("t c : %d\n", _2);
+file b.c:19
+stmt debug done
+
+
+id : 62  <addr_expr 0x7fc237254500
+    type <pointer_type 0x7fc23724f9d8
+        type <function_type 0x7fc23717b2a0 type <integer_type 0x7fc2370e55e8 int>
+            QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+            attributes <tree_list 0x7fc23717caa0
+                purpose <identifier_node 0x7fc2370f19b0 nonnull>
+                value <tree_list 0x7fc23710e988
+                    value <integer_cst 0x7fc2370eb060 constant 1>>
+                chain <tree_list 0x7fc23717ca78
+                    purpose <identifier_node 0x7fc2370f18c0 format>
+                    value <tree_list 0x7fc237111708
+                        value <identifier_node 0x7fc2370f1b40 printf>
+                        chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1> chain <tree_list 0x7fc23710e9b0>>>>>
+            arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+            pointer_to_this <pointer_type 0x7fc23724f9d8>>
+        unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fa80>
+    constant
+    arg:0 <function_decl 0x7fc237180a00 printf type <function_type 0x7fc23717b2a0>
+        addressable used public external built-in decl_2 decl_5 decl_6 QI <built-in>:0:0
+        align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF
+        chain <function_decl 0x7fc237180b00 __builtin_printf_unlocked type <function_type 0x7fc23717b2a0>
+            public external built-in decl_6 QI <built-in>:0:0
+            align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF_UNLOCKED context <translation_unit_decl 0x7fc2370d9e10 b.c> chain <function_decl 0x7fc237180c00 printf_unlocked>>>>
+
+
+id : 63  <pointer_type 0x7fc23724f9d8
+    type <function_type 0x7fc23717b2a0
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+        attributes <tree_list 0x7fc23717caa0
+            purpose <identifier_node 0x7fc2370f19b0 nonnull>
+            value <tree_list 0x7fc23710e988
+                value <integer_cst 0x7fc2370eb060 constant 1>>
+            chain <tree_list 0x7fc23717ca78
+                purpose <identifier_node 0x7fc2370f18c0 format>
+                value <tree_list 0x7fc237111708
+                    value <identifier_node 0x7fc2370f1b40 printf>
+                    chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                        chain <tree_list 0x7fc23710e9b0 value <integer_cst 0x7fc2370eb390 2>>>>>>
+        arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+        pointer_to_this <pointer_type 0x7fc23724f9d8>>
+    unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fa80>
+
+
+id : 64  <function_type 0x7fc23717b2a0
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+    attributes <tree_list 0x7fc23717caa0
+        purpose <identifier_node 0x7fc2370f19b0 nonnull>
+        value <tree_list 0x7fc23710e988
+            value <integer_cst 0x7fc2370eb060 constant 1>>
+        chain <tree_list 0x7fc23717ca78
+            purpose <identifier_node 0x7fc2370f18c0 format>
+            value <tree_list 0x7fc237111708
+                value <identifier_node 0x7fc2370f1b40 printf>
+                chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                    chain <tree_list 0x7fc23710e9b0
+                        value <integer_cst 0x7fc2370eb390 constant 2>>>>>>
+    arg-types <tree_list 0x7fc23710cb68
+        value <pointer_type 0x7fc2370f2690 type <integer_type 0x7fc2370f25e8 char>
+            unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f2690>>
+    pointer_to_this <pointer_type 0x7fc23724f9d8>>
+
+
+id : 65  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 66  <function_decl 0x7fc237180a00 printf
+    type <function_type 0x7fc23717b2a0
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+        attributes <tree_list 0x7fc23717caa0
+            purpose <identifier_node 0x7fc2370f19b0 nonnull>
+            value <tree_list 0x7fc23710e988
+                value <integer_cst 0x7fc2370eb060 constant 1>>
+            chain <tree_list 0x7fc23717ca78
+                purpose <identifier_node 0x7fc2370f18c0 format>
+                value <tree_list 0x7fc237111708
+                    value <identifier_node 0x7fc2370f1b40 printf>
+                    chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                        chain <tree_list 0x7fc23710e9b0 value <integer_cst 0x7fc2370eb390 2>>>>>>
+        arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+        pointer_to_this <pointer_type 0x7fc23724f9d8>>
+    addressable used public external built-in decl_2 decl_5 decl_6 QI <built-in>:0:0
+    align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF chain <function_decl 0x7fc237180b00 __builtin_printf_unlocked>>
+
+
+id : 67  <function_type 0x7fc23717b2a0
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+    attributes <tree_list 0x7fc23717caa0
+        purpose <identifier_node 0x7fc2370f19b0 nonnull>
+        value <tree_list 0x7fc23710e988
+            value <integer_cst 0x7fc2370eb060 constant 1>>
+        chain <tree_list 0x7fc23717ca78
+            purpose <identifier_node 0x7fc2370f18c0 format>
+            value <tree_list 0x7fc237111708
+                value <identifier_node 0x7fc2370f1b40 printf>
+                chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                    chain <tree_list 0x7fc23710e9b0
+                        value <integer_cst 0x7fc2370eb390 constant 2>>>>>>
+    arg-types <tree_list 0x7fc23710cb68
+        value <pointer_type 0x7fc2370f2690 type <integer_type 0x7fc2370f25e8 char>
+            unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f2690>>
+    pointer_to_this <pointer_type 0x7fc23724f9d8>>
+
+
+id : 68  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 69  <addr_expr 0x7fc237254180
+    type <pointer_type 0x7fc23724f930
+        type <array_type 0x7fc23724f888 type <integer_type 0x7fc2370e53f0 char>
+            BLK
+            size <integer_cst 0x7fc237235528 constant 80>
+            unit-size <integer_cst 0x7fc2372354f8 constant 10>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888 domain <integer_type 0x7fc23724f7e0>
+            pointer_to_this <pointer_type 0x7fc23724f930>>
+        unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f930>
+    readonly constant
+    arg:0 <string_cst 0x7fc237254160 type <array_type 0x7fc23724f888>
+        readonly constant static "t c : %d\012\000">
+    b.c:19:9 start: b.c:19:9 finish: b.c:19:20>
+
+
+id : 70  <pointer_type 0x7fc23724f930
+    type <array_type 0x7fc23724f888
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        BLK
+        size <integer_cst 0x7fc237235528 constant 80>
+        unit-size <integer_cst 0x7fc2372354f8 constant 10>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888
+        domain <integer_type 0x7fc23724f7e0 type <integer_type 0x7fc2370e5000 sizetype>
+            DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f7e0 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372354e0 9>>
+        pointer_to_this <pointer_type 0x7fc23724f930>>
+    unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f930>
+
+
+id : 71  <array_type 0x7fc23724f888
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    BLK
+    size <integer_cst 0x7fc237235528 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 80>
+    unit-size <integer_cst 0x7fc2372354f8 type <integer_type 0x7fc2370e5000 sizetype> constant 10>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888
+    domain <integer_type 0x7fc23724f7e0
+        type <integer_type 0x7fc2370e5000 sizetype public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5000 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2370cd4c0 18446744073709551615>>
+        DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f7e0 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372354e0 9>>
+    pointer_to_this <pointer_type 0x7fc23724f930>>
+
+
+id : 72  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 73  <string_cst 0x7fc237254160
+    type <array_type 0x7fc23724f888
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        BLK
+        size <integer_cst 0x7fc237235528 constant 80>
+        unit-size <integer_cst 0x7fc2372354f8 constant 10>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888
+        domain <integer_type 0x7fc23724f7e0 type <integer_type 0x7fc2370e5000 sizetype>
+            DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f7e0 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372354e0 9>>
+        pointer_to_this <pointer_type 0x7fc23724f930>>
+    readonly constant static "t c : %d\012\000">
+
+
+id : 74  <array_type 0x7fc23724f888
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    BLK
+    size <integer_cst 0x7fc237235528 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 80>
+    unit-size <integer_cst 0x7fc2372354f8 type <integer_type 0x7fc2370e5000 sizetype> constant 10>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f888
+    domain <integer_type 0x7fc23724f7e0
+        type <integer_type 0x7fc2370e5000 sizetype public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5000 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2370cd4c0 18446744073709551615>>
+        DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f7e0 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372354e0 9>>
+    pointer_to_this <pointer_type 0x7fc23724f930>>
+
+
+id : 75  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 76  <ssa_name 0x7fc2370d6dc8
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    def_stmt _2 = t_7->c;
+    version:2>
+
+
+id : 77  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+stmt 11
+t_7->c = 111;
+file b.c:20
+stmt debug done
+
+
+id : 78  <integer_cst 0x7fc237235588 type <integer_type 0x7fc2370e55e8 int> constant 111>
+
+
+id : 79  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 80  <component_ref 0x7fc2372522d0
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    arg:0 <mem_ref 0x7fc2372571b8
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+       
+        arg:0 <ssa_name 0x7fc23725e090 type <pointer_type 0x7fc23724f3f0>
+            var <var_decl 0x7fc237961ab0 t>
+            def_stmt t_7 = malloc (100);
+            version:7>
+        arg:1 <integer_cst 0x7fc237235678 constant 0>
+        b.c:20:3 start: b.c:20:3 finish: b.c:20:4>
+    arg:1 <field_decl 0x7fc2370f4428 c type <integer_type 0x7fc2370e55e8 int>
+        SI b.c:4:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370ccd08 constant 16>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>>
+    b.c:20:3 start: b.c:20:2 finish: b.c:20:5>
+got typename: test_struct
+offset 1 16 offset 2 0
+
+
+id : 81  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 82  <mem_ref 0x7fc2372571b8
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+   
+    arg:0 <ssa_name 0x7fc23725e090
+        type <pointer_type 0x7fc23724f3f0 type <record_type 0x7fc237223d20 test_struct>
+            sizes-gimplified public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+        var <var_decl 0x7fc237961ab0 t>
+        def_stmt t_7 = malloc (100);
+        version:7>
+    arg:1 <integer_cst 0x7fc237235678 type <pointer_type 0x7fc23724f3f0> constant 0>
+    b.c:20:3 start: b.c:20:3 finish: b.c:20:4>
+
+
+id : 83  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 84  <ssa_name 0x7fc23725e090
+    type <pointer_type 0x7fc23724f3f0
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+        sizes-gimplified public unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+    var <var_decl 0x7fc237961ab0 t>
+    def_stmt t_7 = malloc (100);
+    version:7>
+
+
+id : 85  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 86  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 87  <integer_cst 0x7fc237235678 type <pointer_type 0x7fc23724f3f0> constant 0>
+
+
+id : 88  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 89  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 90  <field_decl 0x7fc2370f4428 c
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    SI b.c:4:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+    align:32 warn_if_not_align:0 offset_align 128
+    offset <integer_cst 0x7fc2370ccd08 type <integer_type 0x7fc2370e5000 sizetype> constant 16>
+    bit-offset <integer_cst 0x7fc2370ccd20 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 0> context <record_type 0x7fc237223d20 test_struct>>
+
+
+id : 91  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+stmt 12
+_3 = t_7->b;
+file b.c:21
+stmt debug done
+
+
+id : 92  <component_ref 0x7fc237252660
+    type <pointer_type 0x7fc2370f0e70
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        sizes-gimplified unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+   
+    arg:0 <mem_ref 0x7fc237257208
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+       
+        arg:0 <ssa_name 0x7fc23725e090 type <pointer_type 0x7fc23724f3f0>
+            var <var_decl 0x7fc237961ab0 t>
+            def_stmt t_7 = malloc (100);
+            version:7>
+        arg:1 <integer_cst 0x7fc237235678 constant 0>
+        b.c:21:11 start: b.c:21:11 finish: b.c:21:12>
+    arg:1 <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+        unsigned DI b.c:3:8 size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4428 c type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:4:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370ccd08 constant 16>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>>>
+    b.c:21:2 start: b.c:21:2 finish: b.c:21:19>
+got typename: test_struct
+offset 1 0 offset 2 64
+
+
+id : 93  <pointer_type 0x7fc2370f0e70
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    sizes-gimplified unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+
+
+id : 94  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 95  <mem_ref 0x7fc237257208
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+   
+    arg:0 <ssa_name 0x7fc23725e090
+        type <pointer_type 0x7fc23724f3f0 type <record_type 0x7fc237223d20 test_struct>
+            sizes-gimplified public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+        var <var_decl 0x7fc237961ab0 t>
+        def_stmt t_7 = malloc (100);
+        version:7>
+    arg:1 <integer_cst 0x7fc237235678 type <pointer_type 0x7fc23724f3f0> constant 0>
+    b.c:21:11 start: b.c:21:11 finish: b.c:21:12>
+
+
+id : 96  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 97  <ssa_name 0x7fc23725e090
+    type <pointer_type 0x7fc23724f3f0
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+        sizes-gimplified public unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+    var <var_decl 0x7fc237961ab0 t>
+    def_stmt t_7 = malloc (100);
+    version:7>
+
+
+id : 98  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 99  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 100  <integer_cst 0x7fc237235678 type <pointer_type 0x7fc23724f3f0> constant 0>
+
+
+id : 101  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 102  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 103  <field_decl 0x7fc2370f4390 b
+    type <pointer_type 0x7fc2370f0e70
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        sizes-gimplified unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+    unsigned DI b.c:3:8 size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+    align:64 warn_if_not_align:0 offset_align 128
+    offset <integer_cst 0x7fc2370cccd8 type <integer_type 0x7fc2370e5000 sizetype> constant 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>
+
+
+id : 104  <pointer_type 0x7fc2370f0e70
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    sizes-gimplified unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+
+
+id : 105  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 106  <ssa_name 0x7fc2370d6e10
+    type <pointer_type 0x7fc2370f0e70
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        sizes-gimplified unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+   
+    def_stmt _3 = t_7->b;
+    version:3>
+
+
+id : 107  <pointer_type 0x7fc2370f0e70
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    sizes-gimplified unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+
+
+id : 108  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+stmt 13
+read (0, _3, 100);
+file b.c:21
+stmt debug done
+
+
+id : 109  <addr_expr 0x7fc237254520
+    type <pointer_type 0x7fc23724f690
+        type <function_type 0x7fc2370f29d8 type <integer_type 0x7fc2370e55e8 int>
+            QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+            pointer_to_this <pointer_type 0x7fc23724f690>>
+        unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f690>
+    constant
+    arg:0 <function_decl 0x7fc237253100 read type <function_type 0x7fc2370f29d8>
+        addressable used public external decl_2 decl_5 QI b.c:16:2 align:8 warn_if_not_align:0>>
+
+
+id : 110  <pointer_type 0x7fc23724f690
+    type <function_type 0x7fc2370f29d8
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+        pointer_to_this <pointer_type 0x7fc23724f690>>
+    unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f690>
+
+
+id : 111  <function_type 0x7fc2370f29d8
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+    pointer_to_this <pointer_type 0x7fc23724f690>>
+
+
+id : 112  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 113  <function_decl 0x7fc237253100 read
+    type <function_type 0x7fc2370f29d8
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+        pointer_to_this <pointer_type 0x7fc23724f690>>
+    addressable used public external decl_2 decl_5 QI b.c:16:2 align:8 warn_if_not_align:0>
+
+
+id : 114  <function_type 0x7fc2370f29d8
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f29d8
+    pointer_to_this <pointer_type 0x7fc23724f690>>
+
+
+id : 115  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 116  <integer_cst 0x7fc2370eb048 type <integer_type 0x7fc2370e55e8 int> constant 0>
+
+
+id : 117  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 118  <ssa_name 0x7fc2370d6e10
+    type <pointer_type 0x7fc2370f0e70
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        sizes-gimplified unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+   
+    def_stmt _3 = t_7->b;
+    version:3>
+
+
+id : 119  <pointer_type 0x7fc2370f0e70
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    sizes-gimplified unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+
+
+id : 120  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 121  <integer_cst 0x7fc237235420 type <integer_type 0x7fc2370e55e8 int> constant 100>
+
+
+id : 122  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+stmt 14
+_4 = t_7->b;
+file b.c:22
+stmt debug done
+
+
+id : 123  <component_ref 0x7fc237252690
+    type <pointer_type 0x7fc2370f0e70
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        sizes-gimplified unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+   
+    arg:0 <mem_ref 0x7fc237257280
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+       
+        arg:0 <ssa_name 0x7fc23725e090 type <pointer_type 0x7fc23724f3f0>
+            var <var_decl 0x7fc237961ab0 t>
+            def_stmt t_7 = malloc (100);
+            version:7>
+        arg:1 <integer_cst 0x7fc237235678 constant 0>
+        b.c:22:22 start: b.c:22:22 finish: b.c:22:23>
+    arg:1 <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+        unsigned DI b.c:3:8 size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4428 c type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:4:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370ccd08 constant 16>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>>>
+    b.c:22:2 start: b.c:22:2 finish: b.c:22:25>
+got typename: test_struct
+offset 1 0 offset 2 64
+
+
+id : 124  <pointer_type 0x7fc2370f0e70
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    sizes-gimplified unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+
+
+id : 125  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 126  <mem_ref 0x7fc237257280
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+   
+    arg:0 <ssa_name 0x7fc23725e090
+        type <pointer_type 0x7fc23724f3f0 type <record_type 0x7fc237223d20 test_struct>
+            sizes-gimplified public unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+        var <var_decl 0x7fc237961ab0 t>
+        def_stmt t_7 = malloc (100);
+        version:7>
+    arg:1 <integer_cst 0x7fc237235678 type <pointer_type 0x7fc23724f3f0> constant 0>
+    b.c:22:22 start: b.c:22:22 finish: b.c:22:23>
+
+
+id : 127  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 128  <ssa_name 0x7fc23725e090
+    type <pointer_type 0x7fc23724f3f0
+        type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+            size <integer_cst 0x7fc2370eb168 constant 192>
+            unit-size <integer_cst 0x7fc2370eb138 constant 24>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20 fields <field_decl 0x7fc2370f42f8 aaaa> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+            pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+        sizes-gimplified public unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+    var <var_decl 0x7fc237961ab0 t>
+    def_stmt t_7 = malloc (100);
+    version:7>
+
+
+id : 129  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 130  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 131  <integer_cst 0x7fc237235678 type <pointer_type 0x7fc23724f3f0> constant 0>
+
+
+id : 132  <pointer_type 0x7fc23724f3f0
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    sizes-gimplified public unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724f3f0>
+
+
+id : 133  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 134  <field_decl 0x7fc2370f4390 b
+    type <pointer_type 0x7fc2370f0e70
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        sizes-gimplified unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+    unsigned DI b.c:3:8 size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+    align:64 warn_if_not_align:0 offset_align 128
+    offset <integer_cst 0x7fc2370cccd8 type <integer_type 0x7fc2370e5000 sizetype> constant 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>
+
+
+id : 135  <pointer_type 0x7fc2370f0e70
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    sizes-gimplified unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+
+
+id : 136  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 137  <ssa_name 0x7fc2370d6e58
+    type <pointer_type 0x7fc2370f0e70
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        sizes-gimplified unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+   
+    def_stmt _4 = t_7->b;
+    version:4>
+
+
+id : 138  <pointer_type 0x7fc2370f0e70
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    sizes-gimplified unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+
+
+id : 139  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+stmt 15
+printf ("t b %s\n", _4);
+file b.c:22
+stmt debug done
+
+
+id : 140  <addr_expr 0x7fc237254540
+    type <pointer_type 0x7fc23724f9d8
+        type <function_type 0x7fc23717b2a0 type <integer_type 0x7fc2370e55e8 int>
+            QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+            attributes <tree_list 0x7fc23717caa0
+                purpose <identifier_node 0x7fc2370f19b0 nonnull>
+                value <tree_list 0x7fc23710e988
+                    value <integer_cst 0x7fc2370eb060 constant 1>>
+                chain <tree_list 0x7fc23717ca78
+                    purpose <identifier_node 0x7fc2370f18c0 format>
+                    value <tree_list 0x7fc237111708
+                        value <identifier_node 0x7fc2370f1b40 printf>
+                        chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1> chain <tree_list 0x7fc23710e9b0>>>>>
+            arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+            pointer_to_this <pointer_type 0x7fc23724f9d8>>
+        unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fa80>
+    constant
+    arg:0 <function_decl 0x7fc237180a00 printf type <function_type 0x7fc23717b2a0>
+        addressable used public external built-in decl_2 decl_5 decl_6 QI <built-in>:0:0
+        align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF
+        chain <function_decl 0x7fc237180b00 __builtin_printf_unlocked type <function_type 0x7fc23717b2a0>
+            public external built-in decl_6 QI <built-in>:0:0
+            align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF_UNLOCKED context <translation_unit_decl 0x7fc2370d9e10 b.c> chain <function_decl 0x7fc237180c00 printf_unlocked>>>>
+
+
+id : 141  <pointer_type 0x7fc23724f9d8
+    type <function_type 0x7fc23717b2a0
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+        attributes <tree_list 0x7fc23717caa0
+            purpose <identifier_node 0x7fc2370f19b0 nonnull>
+            value <tree_list 0x7fc23710e988
+                value <integer_cst 0x7fc2370eb060 constant 1>>
+            chain <tree_list 0x7fc23717ca78
+                purpose <identifier_node 0x7fc2370f18c0 format>
+                value <tree_list 0x7fc237111708
+                    value <identifier_node 0x7fc2370f1b40 printf>
+                    chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                        chain <tree_list 0x7fc23710e9b0 value <integer_cst 0x7fc2370eb390 2>>>>>>
+        arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+        pointer_to_this <pointer_type 0x7fc23724f9d8>>
+    unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fa80>
+
+
+id : 142  <function_type 0x7fc23717b2a0
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+    attributes <tree_list 0x7fc23717caa0
+        purpose <identifier_node 0x7fc2370f19b0 nonnull>
+        value <tree_list 0x7fc23710e988
+            value <integer_cst 0x7fc2370eb060 constant 1>>
+        chain <tree_list 0x7fc23717ca78
+            purpose <identifier_node 0x7fc2370f18c0 format>
+            value <tree_list 0x7fc237111708
+                value <identifier_node 0x7fc2370f1b40 printf>
+                chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                    chain <tree_list 0x7fc23710e9b0
+                        value <integer_cst 0x7fc2370eb390 constant 2>>>>>>
+    arg-types <tree_list 0x7fc23710cb68
+        value <pointer_type 0x7fc2370f2690 type <integer_type 0x7fc2370f25e8 char>
+            unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f2690>>
+    pointer_to_this <pointer_type 0x7fc23724f9d8>>
+
+
+id : 143  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 144  <function_decl 0x7fc237180a00 printf
+    type <function_type 0x7fc23717b2a0
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+        attributes <tree_list 0x7fc23717caa0
+            purpose <identifier_node 0x7fc2370f19b0 nonnull>
+            value <tree_list 0x7fc23710e988
+                value <integer_cst 0x7fc2370eb060 constant 1>>
+            chain <tree_list 0x7fc23717ca78
+                purpose <identifier_node 0x7fc2370f18c0 format>
+                value <tree_list 0x7fc237111708
+                    value <identifier_node 0x7fc2370f1b40 printf>
+                    chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                        chain <tree_list 0x7fc23710e9b0 value <integer_cst 0x7fc2370eb390 2>>>>>>
+        arg-types <tree_list 0x7fc23710cb68 value <pointer_type 0x7fc2370f2690>>
+        pointer_to_this <pointer_type 0x7fc23724f9d8>>
+    addressable used public external built-in decl_2 decl_5 decl_6 QI <built-in>:0:0
+    align:8 warn_if_not_align:0 built-in: BUILT_IN_NORMAL:BUILT_IN_PRINTF chain <function_decl 0x7fc237180b00 __builtin_printf_unlocked>>
+
+
+id : 145  <function_type 0x7fc23717b2a0
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+    QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23710be70
+    attributes <tree_list 0x7fc23717caa0
+        purpose <identifier_node 0x7fc2370f19b0 nonnull>
+        value <tree_list 0x7fc23710e988
+            value <integer_cst 0x7fc2370eb060 constant 1>>
+        chain <tree_list 0x7fc23717ca78
+            purpose <identifier_node 0x7fc2370f18c0 format>
+            value <tree_list 0x7fc237111708
+                value <identifier_node 0x7fc2370f1b40 printf>
+                chain <tree_list 0x7fc23710eac8 value <integer_cst 0x7fc2370eb060 1>
+                    chain <tree_list 0x7fc23710e9b0
+                        value <integer_cst 0x7fc2370eb390 constant 2>>>>>>
+    arg-types <tree_list 0x7fc23710cb68
+        value <pointer_type 0x7fc2370f2690 type <integer_type 0x7fc2370f25e8 char>
+            unsigned DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f2690>>
+    pointer_to_this <pointer_type 0x7fc23724f9d8>>
+
+
+id : 146  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 147  <addr_expr 0x7fc2372542a0
+    type <pointer_type 0x7fc23724fdc8
+        type <array_type 0x7fc23724fd20 type <integer_type 0x7fc2370e53f0 char>
+            DI
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fd20 domain <integer_type 0x7fc23724fc78>
+            pointer_to_this <pointer_type 0x7fc23724fdc8>>
+        unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fdc8>
+    readonly constant
+    arg:0 <string_cst 0x7fc237254280 type <array_type 0x7fc23724fd20>
+        readonly constant static "t b %s\012\000">
+    b.c:22:9 start: b.c:22:9 finish: b.c:22:18>
+
+
+id : 148  <pointer_type 0x7fc23724fdc8
+    type <array_type 0x7fc23724fd20
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fd20
+        domain <integer_type 0x7fc23724fc78 type <integer_type 0x7fc2370e5000 sizetype>
+            DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fc78 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372355d0 7>>
+        pointer_to_this <pointer_type 0x7fc23724fdc8>>
+    unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fdc8>
+
+
+id : 149  <array_type 0x7fc23724fd20
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fd20
+    domain <integer_type 0x7fc23724fc78
+        type <integer_type 0x7fc2370e5000 sizetype public unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5000 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2370cd4c0 18446744073709551615>>
+        DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fc78 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372355d0 7>>
+    pointer_to_this <pointer_type 0x7fc23724fdc8>>
+
+
+id : 150  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 151  <string_cst 0x7fc237254280
+    type <array_type 0x7fc23724fd20
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fd20
+        domain <integer_type 0x7fc23724fc78 type <integer_type 0x7fc2370e5000 sizetype>
+            DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fc78 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372355d0 7>>
+        pointer_to_this <pointer_type 0x7fc23724fdc8>>
+    readonly constant static "t b %s\012\000">
+
+
+id : 152  <array_type 0x7fc23724fd20
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fd20
+    domain <integer_type 0x7fc23724fc78
+        type <integer_type 0x7fc2370e5000 sizetype public unsigned DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+            align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5000 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2370cd4c0 18446744073709551615>>
+        DI size <integer_cst 0x7fc2370ccca8 64> unit-size <integer_cst 0x7fc2370cccc0 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc23724fc78 precision:64 min <integer_cst 0x7fc2370cccd8 0> max <integer_cst 0x7fc2372355d0 7>>
+    pointer_to_this <pointer_type 0x7fc23724fdc8>>
+
+
+id : 153  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+
+
+id : 154  <ssa_name 0x7fc2370d6e58
+    type <pointer_type 0x7fc2370f0e70
+        type <integer_type 0x7fc2370e53f0 char public string-flag QI
+            size <integer_cst 0x7fc2370ccd98 constant 8>
+            unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+            align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+            pointer_to_this <pointer_type 0x7fc2370f0e70>>
+        sizes-gimplified unsigned DI
+        size <integer_cst 0x7fc2370ccca8 constant 64>
+        unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+   
+    def_stmt _4 = t_7->b;
+    version:4>
+
+
+id : 155  <pointer_type 0x7fc2370f0e70
+    type <integer_type 0x7fc2370e53f0 char public string-flag QI
+        size <integer_cst 0x7fc2370ccd98 constant 8>
+        unit-size <integer_cst 0x7fc2370ccdb0 constant 1>
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+        pointer_to_this <pointer_type 0x7fc2370f0e70>>
+    sizes-gimplified unsigned DI
+    size <integer_cst 0x7fc2370ccca8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 64>
+    unit-size <integer_cst 0x7fc2370cccc0 type <integer_type 0x7fc2370e5000 sizetype> constant 8>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370f0e70 reference_to_this <reference_type 0x7fc237221c78>>
+
+
+id : 156  <integer_type 0x7fc2370e53f0 char public string-flag QI
+    size <integer_cst 0x7fc2370ccd98 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 8>
+    unit-size <integer_cst 0x7fc2370ccdb0 type <integer_type 0x7fc2370e5000 sizetype> constant 1>
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e53f0 precision:8 min <integer_cst 0x7fc2370ccde0 -128> max <integer_cst 0x7fc2370cce10 127>
+    pointer_to_this <pointer_type 0x7fc2370f0e70>>
+stmt 16
+tt ={v} {CLOBBER};
+file (null):0
+stmt debug done
+
+
+id : 157  <constructor 0x7fc237235690
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    constant volatile length:0>
+
+
+id : 158  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+
+
+id : 159  <var_decl 0x7fc237961b40 tt
+    type <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+        size <integer_cst 0x7fc2370eb168 constant 192>
+        unit-size <integer_cst 0x7fc2370eb138 constant 24>
+        align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+        fields <field_decl 0x7fc2370f42f8 aaaa type <integer_type 0x7fc2370e55e8 int>
+            SI b.c:2:6
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 offset_align 128
+            offset <integer_cst 0x7fc2370cccd8 constant 0>
+            bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4390 b>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+        pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+    used read BLK b.c:15:21 size <integer_cst 0x7fc2370eb168 192> unit-size <integer_cst 0x7fc2370eb138 24>
+    align:64 warn_if_not_align:0 context <function_decl 0x7fc237229f00 main> chain <function_decl 0x7fc237253300 read>>
+
+
+id : 160  <record_type 0x7fc237223d20 test_struct sizes-gimplified type_0 BLK
+    size <integer_cst 0x7fc2370eb168 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 192>
+    unit-size <integer_cst 0x7fc2370eb138 type <integer_type 0x7fc2370e5000 sizetype> constant 24>
+    align:64 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc237223d20
+    fields <field_decl 0x7fc2370f42f8 aaaa
+        type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+            size <integer_cst 0x7fc2370ccee8 constant 32>
+            unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+            align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+            pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+        SI b.c:2:6 size <integer_cst 0x7fc2370ccee8 32> unit-size <integer_cst 0x7fc2370ccf00 4>
+        align:32 warn_if_not_align:0 offset_align 128
+        offset <integer_cst 0x7fc2370cccd8 constant 0>
+        bit-offset <integer_cst 0x7fc2370ccd20 constant 0> context <record_type 0x7fc237223d20 test_struct>
+        chain <field_decl 0x7fc2370f4390 b type <pointer_type 0x7fc2370f0e70>
+            unsigned DI b.c:3:8
+            size <integer_cst 0x7fc2370ccca8 constant 64>
+            unit-size <integer_cst 0x7fc2370cccc0 constant 8>
+            align:64 warn_if_not_align:0 offset_align 128 offset <integer_cst 0x7fc2370cccd8 0> bit-offset <integer_cst 0x7fc2370ccca8 64> context <record_type 0x7fc237223d20 test_struct> chain <field_decl 0x7fc2370f4428 c>>> context <translation_unit_decl 0x7fc2370d9e10 b.c>
+    pointer_to_this <pointer_type 0x7fc23724f3f0> chain <type_decl 0x7fc2370f4260 D.2281>>
+stmt 17
+_16 = 0;
+file <built-in>:0
+stmt debug done
+
+
+id : 161  <integer_cst 0x7fc2370eb048 type <integer_type 0x7fc2370e55e8 int> constant 0>
+
+
+id : 162  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+
+
+id : 163  <ssa_name 0x7fc23725e318
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    def_stmt _16 = 0;
+    version:16>
+
+
+id : 164  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+stmt 18
+<L0>:
+file (null):0
+stmt debug done
+
+
+id : 165  <label_decl 0x7fc23724e300 L.0
+    type <void_type 0x7fc2370e5f18 void VOID
+        align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5f18
+        pointer_to_this <pointer_type 0x7fc2370ed000>>
+    ignored VOID b.c:23:1
+    align:1 warn_if_not_align:0 context <function_decl 0x7fc237229f00 main>>
+
+
+id : 166  <void_type 0x7fc2370e5f18 void VOID
+    align:8 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e5f18
+    pointer_to_this <pointer_type 0x7fc2370ed000>>
+stmt 19
+return _16;
+file <built-in>:0
+stmt debug done
+
+
+id : 167  <ssa_name 0x7fc23725e318
+    type <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+        size <integer_cst 0x7fc2370ccee8 constant 32>
+        unit-size <integer_cst 0x7fc2370ccf00 constant 4>
+        align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+        pointer_to_this <pointer_type 0x7fc2370ed9d8>>
+   
+    def_stmt _16 = 0;
+    version:16>
+
+
+id : 168  <integer_type 0x7fc2370e55e8 int sizes-gimplified public SI
+    size <integer_cst 0x7fc2370ccee8 type <integer_type 0x7fc2370e50a8 bitsizetype> constant 32>
+    unit-size <integer_cst 0x7fc2370ccf00 type <integer_type 0x7fc2370e5000 sizetype> constant 4>
+    align:32 warn_if_not_align:0 symtab:0 alias-set -1 canonical-type 0x7fc2370e55e8 precision:32 min <integer_cst 0x7fc2370ccea0 -2147483648> max <integer_cst 0x7fc2370cceb8 2147483647>
+    pointer_to_this <pointer_type 0x7fc2370ed9d8>>

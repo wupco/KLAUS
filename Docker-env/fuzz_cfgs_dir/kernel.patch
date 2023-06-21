@@ -1,0 +1,136 @@
+diff --git a/kernel/kcov.c b/kernel/kcov.c
+index 80bfe71bb..9fab3bc63 100644
+--- a/kernel/kcov.c
++++ b/kernel/kcov.c
+@@ -207,6 +207,131 @@ void notrace __sanitizer_cov_trace_pc(void)
+ }
+ EXPORT_SYMBOL(__sanitizer_cov_trace_pc);
+ 
++#define VAL_SIGNAL		(0x1UL << 56)
++#define OBJ_SIGNAL 		(0x2UL << 56)
++#define ENABLE_SIGNAL	(0x3UL << 56)
++#define PRE_SIGNAL		(0x4UL << 56)
++#define POST_SIGNAL		(0x5UL << 56)
++
++void notrace __sanitizer_cov_trace_int8(unsigned long idx, unsigned long data)
++{
++	struct task_struct *t;
++	unsigned long *area;
++	unsigned long pos;
++
++	t = current;
++	if (!check_kcov_mode(KCOV_MODE_TRACE_PC, t)) {
++		printk("kcov mode error: size: %d", t->kcov_size);
++		return;
++	}
++
++	area = t->kcov_area;
++	pos = READ_ONCE(area[0]) + 1;
++	if (!likely(READ_ONCE(area[0]) + 2 < t->kcov_size)) {
++		printk("no enough memory space for kcov");
++		return;
++	}
++
++	idx = idx & 0xffff;
++	// 16 bits | 16 bits idx || 32 bits data
++	area[pos] = VAL_SIGNAL | (idx << 32) | (data >> 32);
++	WRITE_ONCE(area[0], pos);
++	//write low bytes
++	// 16 bits || 16 bits idx || 32 bits data
++	area[++pos] = VAL_SIGNAL | (idx << 32) | (data & 0xffffffff);
++	WRITE_ONCE(area[0], pos);
++}
++EXPORT_SYMBOL(__sanitizer_cov_trace_int8);
++
++void notrace __sanitizer_obj_cov_trace_pc(void)
++{
++	struct task_struct *t;
++	unsigned long *area;
++	unsigned long ip = _RET_IP_;
++	unsigned long pos;
++
++	t = current;
++	if (!check_kcov_mode(KCOV_MODE_TRACE_PC, t))
++		return;
++
++	area = t->kcov_area;
++	/* The first 64-bit word is the number of subsequent PCs. */
++	pos = READ_ONCE(area[0]) + 1;
++	if (likely(pos < t->kcov_size)) {
++		area[pos] = OBJ_SIGNAL | (ip & 0xffffffff);
++		WRITE_ONCE(area[0], pos);
++	}
++}
++EXPORT_SYMBOL(__sanitizer_obj_cov_trace_pc);
++
++void notrace __sanitizer_cov_enable_trace(unsigned long idx,
++					  unsigned long maxid)
++{
++	struct task_struct *t;
++	unsigned long *area;
++	unsigned long ip = _RET_IP_;
++	unsigned long pos;
++
++	if (maxid & 0xffff0000) {
++		printk("idx is too large");
++	}
++	idx = idx & 0xffff;
++	t = current;
++	if (!check_kcov_mode(KCOV_MODE_TRACE_PC, t))
++		return;
++
++	area = t->kcov_area;
++	// 16 bits || 16 bits idx || 32 bits pc
++	pos = READ_ONCE(area[0]) + 1;
++	if (likely(pos < t->kcov_size)) {
++		area[pos] = ENABLE_SIGNAL | (idx << 32) | (ip & 0xffffffff);
++		WRITE_ONCE(area[0], pos);
++	}
++}
++EXPORT_SYMBOL(__sanitizer_cov_enable_trace);
++
++void notrace __sanitizer_cov_pre_trace(unsigned long idx)
++{
++	struct task_struct *t;
++	unsigned long *area;
++	unsigned long ip = _RET_IP_;
++	unsigned long pos;
++
++	idx = idx & 0xffff;
++	t = current;
++	if (!check_kcov_mode(KCOV_MODE_TRACE_PC, t))
++		return;
++
++	area = t->kcov_area;
++	pos = READ_ONCE(area[0]) + 1;
++	if (likely(pos < t->kcov_size)) {
++		area[pos] = PRE_SIGNAL | (idx<<32) | (ip & 0xffffffff);
++		WRITE_ONCE(area[0], pos);
++	}
++}
++EXPORT_SYMBOL(__sanitizer_cov_pre_trace);
++
++void notrace __sanitizer_cov_post_trace(unsigned long idx)
++{
++	struct task_struct *t;
++	unsigned long *area;
++	unsigned long ip = _RET_IP_;
++	unsigned long pos;
++
++	idx = idx & 0xffff;
++	t = current;
++	if (!check_kcov_mode(KCOV_MODE_TRACE_PC, t))
++		return;
++
++	area = t->kcov_area;
++	pos = READ_ONCE(area[0]) + 1;
++	if (likely(pos < t->kcov_size)) {
++		area[pos] = POST_SIGNAL | (idx<<32) | (ip & 0xffffffff);
++		WRITE_ONCE(area[0], pos);
++	}
++}
++EXPORT_SYMBOL(__sanitizer_cov_post_trace);
++
+ #ifdef CONFIG_KCOV_ENABLE_COMPARISONS
+ static void notrace write_comp_data(u64 type, u64 arg1, u64 arg2, u64 ip)
+ {

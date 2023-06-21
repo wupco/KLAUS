@@ -1,0 +1,3 @@
+test_struct 0 b.c 17 main
+test_struct 8 b.c 17 main
+common 0 b.c 4 main

@@ -1,0 +1,4 @@
+b.c 16 main
+test_struct 0
+------
+test_struct 12
