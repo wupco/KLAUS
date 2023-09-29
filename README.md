@@ -29,3 +29,14 @@ Source code of KLAUS.
 + patch_fuzzer: fuzzing instance.
 + setup_env: script to build the enviroment for cases.
 + syzPatch-gcc: the tool to instrument feedback for fuzzer.
+
+### More details
+Access our paper and slides [here](https://www.usenix.org/conference/usenixsecurity23/presentation/wu-yuhang).
+```bibtex
+@inproceedings{klaus,
+  author = {Wu, Yuhang and Lin, Zhenpeng and Chen, Yueqi and Le, Dang K and Mu, Dongliang and Xing, Xinyu},
+  title = {Mitigating Security Risks in Linux with {KLAUS}: A Method for Evaluating Patch Correctness},
+  booktitle = {32nd USENIX Security Symposium (USENIX Security 23)},
+  year = {2023},
+}
+```
